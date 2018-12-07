@@ -1,0 +1,23 @@
+{
+  "name": "debug-webpack",
+  "version": "1.0.0",
+  "description": "debug webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "debug:build": "node --inspect-brk=5858 ./node_modules/.bin/webpack",
+    "debug:watch": "node --inspect-brk=5859 ./node_modules/.bin/webpack --watch"
+  },
+  "keywords": [],
+  "author": "thzt",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.1.2",
+    "@babel/preset-env": "7.1.0",
+    "babel-loader": "8.0.4",
+    "uglifyjs-webpack-plugin": "1.3.0",
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.2"
+  }
+}
